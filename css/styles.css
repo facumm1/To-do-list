@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#fcb683;
+    display: flex;
+    align-content: center;
+}
+
+.master-box{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #28282B;
+    font-family: 'Questrial', sans-serif;
+    margin: 1em auto 5em auto;
+    padding: 1em 2em;
+    border-radius: 1em;
+    max-width: 50em;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 0.5em 0;
+    font-size: 2.5em;
+/*  border: 2px solid #fff; */
+}
+
+.window-box{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+/*  border: 2px solid #fff; */
+    padding: 0 10em 0em 10em;
+}
+
+.entrada-datos{
+    margin: 0em;
+    padding: .5em .5em;
+    font-size: 2em;
+}
+
+.entrada-datos::placeholder{
+    font-size: 1em;
+}
+
+.boton-enviar{
+    padding: .4em .7em;
+    background-color:#fcb683;
+    color: #fff;
+    font-weight: 800;
+    font-size: 2em;
+    border:none;
+}
+
+.boton-enviar:hover{
+    background-color: #ffcda8;
+    transition-property: background;
+    transition-duration: .3s;
+}
+
+/* ------------------------------------------------------ */
+
+.add-box{
+    display: none;
+    /* max-width: 30em; */
+}
+
+.listaCreados{
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    margin: 1em 4em;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 800;
+    font-family: 'Questrial', sans-serif;
+    list-style: none;
+/*     max-width: 18em; */
+/*  border: 2px solid #fff; */
+}
+
+.listaCreados li{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /* align-content: flex-end; */
+    margin: .5em 0;
+    padding: 0 0;
+    border-radius: .5em;
+/*  border: 2px solid #fff; */
+    background-color: #d6d6d6;
+    max-width: 20em;
+}
+
+li > p{
+    padding: 0 1em;
+    max-width: 15em;
+    overflow-wrap: break-word;
+    /* word-wrap: break-word; */
+    /* height: auto; */
+    /* max-width: 2em; */
+    /* overflow: visible; */
+}
+
+.boton-tarea{
+    background-color: #e07e7e;
+    color: #fff;
+    font-size: 1em;
+    padding: 1em;
+    border-radius: 0 .5em .5em 0;
+    border: none;
+}
+
+.boton-tarea:hover{
+    background-color: #e8be74;
+    transition-property: background;
+    transition-duration: .3s;
+}
+
+.empty-message{
+    color: #fff;
+    padding: 1em 0;
+}
+
+@keyframes animacionColor {
+    from {
+        background-color: #000;
+    }
+    to{
+        background-color: #d6d6d6;
+    }
+}
